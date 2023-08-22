@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Dispositivo</title>
+</head>
+<body>
+    
+
+    <button id="verificarDispositivo">Verificar Dispositivo para baixar farligth</button>
+
+    <script>
+        document.getElementById("verificarDispositivo").addEventListener("click", function() {
+            // Código de verificação do dispositivo aqui
+            var userAgent = navigator.userAgent;
+
+            if (userAgent.match(/Android/i)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.miraclegames.farlight84";
+            } else if (userAgent.match(/iPhone|iPad|iPod/i)) {
+                
+                window.location.href = "https://play.google.com/store/apps/details?id=com.miraclegames.farlight84";
+            } 
+
+        
+        });
+    </script>
+</body>
+</html>
